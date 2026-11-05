@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "dgSpecHash": "CgckKOKeHQU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zzmgn\\Desktop\\Week-09-SPI-OLED-and-Kestrel-UI\\67030281\\Lab9-3_ClosedLoop_System\\Kestrel_Server\\ESP32.Kestrel.Webserver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\10.0.11\\runtime.android-arm.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.android-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\10.0.11\\runtime.android-x64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.android-x86.runtime.native.system.io.ports\\10.0.11\\runtime.android-x86.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\10.0.11\\runtime.linux-arm.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.linux-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\10.0.11\\runtime.linux-bionic-x64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-musl-arm.runtime.native.system.io.ports\\10.0.11\\runtime.linux-musl-arm.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.linux-musl-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-musl-x64.runtime.native.system.io.ports\\10.0.11\\runtime.linux-musl-x64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\10.0.11\\runtime.linux-x64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\10.0.11\\runtime.maccatalyst-x64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.native.system.io.ports\\10.0.11\\runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.osx-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\10.0.11\\runtime.osx-x64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
+    "C:\\Users\\zzmgn\\.nuget\\packages\\system.io.ports\\10.0.11\\system.io.ports.10.0.11.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\zzmgn\\Desktop\\Week-09-SPI-OLED-and-Kestrel-UI\\67030281\\Lab9-3_ClosedLoop_System\\Kestrel_Server\\ESP32.Kestrel.Webserver.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\zzmgn\\Desktop\\Week-09-SPI-OLED-and-Kestrel-UI\\67030281\\Lab9-3_ClosedLoop_System\\Kestrel_Server\\ESP32.Kestrel.Webserver.csproj",
+      "targetGraphs": []
+    }
+  ]
+}
