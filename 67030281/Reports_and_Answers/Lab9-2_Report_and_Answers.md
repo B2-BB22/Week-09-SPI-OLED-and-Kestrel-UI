@@ -23,7 +23,6 @@
 
 ### 2.1 โมเดลคณิตศาสตร์การปรับเทียบเชิงเส้นแบบสองจุด (Two-Point Linear Calibration)
 
-$$\text{clamped} = \operatorname{Clamp}(\text{rawAdc}, \text{RawMin}, \text{RawMax})$$
 
 $$y = \left( \frac{\text{clamped} - \text{RawMin}}{\text{RawMax} - \text{RawMin}} \right) \times (\text{ScaleMax} - \text{ScaleMin}) + \text{ScaleMin}$$
 
