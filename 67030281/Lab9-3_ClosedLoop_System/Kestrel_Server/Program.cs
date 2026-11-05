@@ -18,7 +18,6 @@ app.MapGet("/api/telemetry", (CalibrationService cal, SerialBridgeService bridge
 {
     return Results.Ok(new
     {
-        studentId = "67030281",
         raw = bridge.LatestRaw,
         calibrated = bridge.LatestCalibrated,
         unit = cal.Settings.Unit,

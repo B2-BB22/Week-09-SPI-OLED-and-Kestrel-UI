@@ -12,7 +12,7 @@ public class CalibrationSettings
 public class CalibrationService
 {
     private CalibrationSettings _settings = new();
-    private string _currentOledMessage = "SYSTEM READY (67030281)";
+    private string _currentOledMessage = "SYSTEM READY";
 
     public CalibrationSettings Settings => _settings;
     public string CurrentOledMessage => _currentOledMessage;

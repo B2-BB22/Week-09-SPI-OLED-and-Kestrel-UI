@@ -19,7 +19,7 @@
 #define OLED_PIN_DC     (GPIO_NUM_2)  // DC (0 = Command, 1 = Data)
 #define OLED_PIN_CS     (GPIO_NUM_5)  // CS (Chip Select - Active LOW)
 
-// Macro สำหรับแปลงไบต์เป็นรูปแบบ Binary 8 บิตสำหรับการทำ Forensics
+// Macro สำหรับแปลงไบต์เป็นรูปแบบ Binary 8 บิตสำหรับพิมพ์ตรวจสอบข้อมูลในแรม
 #define BYTE_TO_BINARY_PATTERN "%c%c%c%c%c%c%c%c"
 #define BYTE_TO_BINARY(byte)  \
   ((byte) & 0x80 ? '1' : '0'), \
@@ -171,11 +171,11 @@ void oled_draw_string(int x, int y, const char *str, bool color)
 }
 
 // ==============================================================================
-// 5. ฟังก์ชันชันสูตรหน่วยความจำเชิงนิติวิทยาศาสตร์ (Memory Forensics Dump)
+// 5. ฟังก์ชันตรวจสอบค่าในหน่วยความจำ (Memory Dump)
 // ==============================================================================
-void oled_forensic_dump_region(int start_byte, int length)
+void oled_dump_memory_region(int start_byte, int length)
 {
-    ESP_LOGI("FORENSIC", "=== DUMPING FRAMEBUFFER BYTES [%d..%d] ===", start_byte, start_byte + length - 1);
+    ESP_LOGI("MEM_DUMP", "=== DUMPING FRAMEBUFFER BYTES [%d..%d] ===", start_byte, start_byte + length - 1);
     for (int i = start_byte; i < start_byte + length && i < 1024; i++) {
         int page = i / 128;
         int col = i % 128;
@@ -185,7 +185,7 @@ void oled_forensic_dump_region(int start_byte, int length)
 }
 
 // ==============================================================================
-// 6. ฟังก์ชันหลัก (app_main) รวมครบทุกขั้นตอนการทดลอง 1.1 - 1.4 & Forensics
+// 6. ฟังก์ชันหลัก (app_main) รวมครบทุกขั้นตอนการทดลอง
 // ==============================================================================
 void app_main(void)
 {
@@ -236,12 +236,11 @@ void app_main(void)
     oled_draw_string(24, 32, "ID: 67030281", true);  // โซนล่าง (รหัส 67030281)
     oled_flush();
 
-    // 7. ชันสูตรหน่วยความจำเชิงนิติวิทยาศาสตร์ (Memory Forensics Dump)
-    // บริเวณตัวอักษร 'H' เริ่มต้นที่พิกัด X=30
+    // 7. ตรวจสอบค่าในหน่วยความจำแรม (Memory Dump) บริเวณตัวอักษร 'H' พิกัด X=30
     vTaskDelay(pdMS_TO_TICKS(1000));
-    ESP_LOGI(TAG, "Step 7: Performing Framebuffer Forensics Memory Dump...");
-    oled_forensic_dump_region(28, 12); // Dump บริเวณคอลัมน์ 28 ถึง 39 (รอบตัว 'H')
-    oled_forensic_dump_region(128 + 28, 12); // Dump ใน Page 1 เพื่อตรวจสอบพิกเซลแถว 4..6 ของ 'H'
+    ESP_LOGI(TAG, "Step 7: Dumping Framebuffer memory...");
+    oled_dump_memory_region(28, 12); // Dump บริเวณคอลัมน์ 28 ถึง 39 (รอบตัว 'H')
+    oled_dump_memory_region(128 + 28, 12); // Dump ใน Page 1 เพื่อตรวจสอบพิกเซลแถว 4..6 ของ 'H'
 
     ESP_LOGI(TAG, "Lab 9.1 Bring-up complete. Display active.");
 }

@@ -12,7 +12,7 @@
 #include "esp_log.h"
 #include "font5x7.h"
 
-#define TAG "CLOSED_LOOP_67030281"
+#define TAG "CLOSED_LOOP"
 
 // ==========================================
 // 1. การกำหนดขาสัญญาณฮาร์ดแวร์
@@ -227,7 +227,7 @@ void render_multizone_ui(int raw_val, int percent, bool is_cloud, const char *ms
 // ==========================================
 void app_main(void) {
     init_hardware();
-    ESP_LOGI(TAG, "Hardware initialized successfully for student 67030281.");
+    ESP_LOGI(TAG, "Hardware initialized successfully.");
 
     int raw_adc = 0;
     int calculated_percent = 0;

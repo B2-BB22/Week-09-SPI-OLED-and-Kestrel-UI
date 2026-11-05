@@ -18,3 +18,10 @@ CMakeUserPresets.json
 /Lab9_Codes/ESP32.Kestrel.Webserver/bin
 /Lab9_Codes/ESP32.Kestrel.Webserver/obj
 /Lab9_Codes/Lab9-3-ESP32-ClosedLoop/build
+
+# Global build artifacts
+**/bin/
+**/obj/
+**/build/
+.vs/
+

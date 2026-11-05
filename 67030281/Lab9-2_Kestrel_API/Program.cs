@@ -14,7 +14,6 @@ app.MapGet("/api/telemetry", (CalibrationService cal) =>
     double calibrated = cal.Compute(simulatedRaw);
     return Results.Ok(new
     {
-        studentId = "67030281",
         raw = simulatedRaw,
         calibrated = Math.Round(calibrated, 1),
         unit = cal.Settings.Unit,
